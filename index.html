@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Shop<span>Zone</span></div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput"
+                   placeholder="Search products...">
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <button class="cart-button" id="cartButton">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tag">BIG SALE – UP TO 50% OFF</p>
+            <h1>Discover Your<br>Shopping Style</h1>
+            <p>
+                Find the best products at amazing prices.
+                Shop smart, shop better!
+            </p>
+            <a href="#products" class="hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main class="products-section" id="products">
+
+        <div class="section-heading">
+            <h2>Featured Products</h2>
+            <p>Explore our latest collection</p>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <p class="loading">Loading products...</p>
+        </div>
+
+    </main>
+
+    <!-- Shopping Cart Panel -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-panel">
+
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button id="closeCart" class="close-btn">✕</button>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <div class="cart-footer">
+                <h3>Total: ₹<span id="cartTotal">0.00</span></h3>
+                <button id="checkoutBtn" class="checkout-btn">
+                    Checkout
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>ShopZone</h2>
+        <p>Your one-stop destination for smart shopping.</p>
+        <p>© 2026 ShopZone. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
